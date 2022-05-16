@@ -30,8 +30,6 @@ export default {
    mounted() {
     // configure Swiper to use modules. The modules were tested with SwiperJS v6.8.4 with NuxtJS v2.15.7
     // previously it was before export default. Moved here for performance issues. Move back in case of problems.
-    // add or remove unused modules
-    Swiper.use([Navigation, Pagination, EffectCards, Autoplay])
     // init Swiper:  eslint-disable used for deleting error of unsued const swiper
     /* eslint-disable no-unused-vars */
     const swiper = new Swiper('.swiper', {
